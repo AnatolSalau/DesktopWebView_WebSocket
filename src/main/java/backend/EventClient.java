@@ -56,8 +56,7 @@ public class EventClient
             // Send another message
             session.getBasicRemote().sendText("Goodbye");
 
-            // Wait for remote to close
-            clientEndpoint.awaitClosure();
+
 
             // Close session
             session.close();

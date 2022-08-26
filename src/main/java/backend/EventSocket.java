@@ -1,61 +1,35 @@
-package backend;//
-// ========================================================================
-// Copyright (c) Mort Bay Consulting Pty Ltd and others.
-//
-// This program and the accompanying materials are made available under the
-// terms of the Eclipse Public License v. 2.0 which is available at
-// https://www.eclipse.org/legal/epl-2.0, or the Apache License, Version 2.0
-// which is available at https://www.apache.org/licenses/LICENSE-2.0.
-//
-// SPDX-License-Identifier: EPL-2.0 OR Apache-2.0
-// ========================================================================
-//
-
+package backend;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Locale;
+import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 
 @ClientEndpoint
-@ServerEndpoint(value = "/events/")
+@ServerEndpoint(value = "/events")
 public class EventSocket
 {
-    private final CountDownLatch closureLatch = new CountDownLatch(1);
-
+    private static Set<Session> sessions = Collections.synchronizedSet(new HashSet<Session>());
     @OnOpen
-    public void onWebSocketConnect(Session sess)
+    public void onOpen(Session sess)
     {
-        System.out.println("Socket Connected: " + sess);
+        System.out.println("Socket Connected: " + sess + " " + sess.getId());
     }
 
     @OnMessage
-    public void onWebSocketText(Session sess, String message) throws IOException
+    public String onMessage(Session sess, String message) throws IOException
     {
-        System.out.println("Received TEXT message: " + message);
-
-        if (message.toLowerCase(Locale.US).contains("bye"))
-        {
-            sess.close(new CloseReason(CloseReason.CloseCodes.NORMAL_CLOSURE, "Thanks"));
-        }
+        System.out.println("Handling message " + message+ " " + sess.getId());
+        return null;
     }
 
     @OnClose
-    public void onWebSocketClose(CloseReason reason)
+    public void onClose(Session sess)
     {
-        System.out.println("Socket Closed: " + reason);
-        closureLatch.countDown();
+        System.out.println("Socket Closed: " + sess + " " + sess.getId());
     }
 
-    @OnError
-    public void onWebSocketError(Throwable cause)
-    {
-        cause.printStackTrace(System.err);
-    }
-
-    public void awaitClosure() throws InterruptedException
-    {
-        System.out.println("Awaiting closure from remote");
-        closureLatch.await();
-    }
 }

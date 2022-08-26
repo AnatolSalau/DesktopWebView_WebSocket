@@ -41,7 +41,7 @@ public class EventServer
         // This is also known as the handler tree (in jetty speak)
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
-        context.addServlet(HomeServlet.class, "/");
+        context.addServlet(HomeServlet.class, "/table");
         server.setHandler(context);
 
         // Initialize javax.websocket layer

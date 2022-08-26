@@ -1,4 +1,4 @@
-let url = 'http://127.0.0.1:8080/';
+let url = 'http://127.0.0.1:8080/table';
 //Словарь с пользователями
 let arrayOfUsers = [];
 //Функция получения json c url
