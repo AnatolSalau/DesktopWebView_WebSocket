@@ -41,7 +41,8 @@ public class EventServer
         // This is also known as the handler tree (in jetty speak)
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
-        context.addServlet(HomeServlet.class, "/table");
+        context.addServlet(TableServlet.class, "/table");
+        context.addServlet(DataBaseServlet.class,"/test");
         server.setHandler(context);
 
         // Initialize javax.websocket layer
@@ -55,7 +56,7 @@ public class EventServer
             wsContainer.setDefaultMaxTextMessageBufferSize(65535);
 
             // Add WebSocket endpoint to javax.websocket layer
-            wsContainer.addEndpoint(EventSocket.class);
+            wsContainer.addEndpoint(EventSocketForServer.class);
         });
 
     }

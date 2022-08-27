@@ -1,26 +1,19 @@
-//Функция загрузки текста в текстовое поле
-function insertText1() {
-    document.getElementById('exampleFormControlTextarea1').value = 'Hello, this is text from js';
-}
-insertText1();
 
 //Добавляем обработчик события
-document.getElementById("loadtext").addEventListener("click", loadText);
+document.getElementById("loadtext").addEventListener("click", sendTextToServer);
+//ws://
+const wsURL = "ws://127.0.0.1:8080/events";
+let websocket = new WebSocket(wsURL);
 
-function loadText() {
-    //ws://
-    const wsURL = "ws://127.0.0.1:8080/events";
-    let websocket = new WebSocket(wsURL);
-
+function sendTextToServer() {
     websocket.onmessage = function (event) {
         onMessage(event);
     }
     websocket.onopen = function () {
         onOpen(wsURL);
     }
-
-
-    //document.getElementById('exampleFormControlTextarea2').value = 'Hello, this is text from js';
+    send();
+    displayText1()
 }
 
 function onOpen(wsUrl) {
@@ -33,8 +26,15 @@ function onClose(wsUrl) {
 
 function onMessage(event) {
     console.log("Handle event" + event)
+    displayText1(event.data)
 }
 
 function send() {
-
+    let text = document.getElementById('exampleFormControlTextarea1').value;
+    console.log(text);
+    websocket.send(text);
+}
+//Функция загрузки текста в текстовое поле
+function displayText1(message) {
+    document.getElementById('exampleFormControlTextarea2').value = message;
 }
