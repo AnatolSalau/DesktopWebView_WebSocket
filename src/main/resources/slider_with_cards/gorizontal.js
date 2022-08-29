@@ -1,19 +1,19 @@
 //Смещение от левого края
 let offset = 0;
-const gap = 120;
+const gap = 110;
 //<div class="slider-line">
 const sliderLine = document.querySelector(".slider-line");
 //collection all images
- var imgs = document.getElementById("slider").getElementsByTagName("img");
-console.log(imgs);
+
 //slider animation left
 document.getElementById("btn_left").addEventListener(
     "click", function silderanimation() {
-        
-        let tmp = imgs[0];
-        
+        var elem = document.createElement("img");
+        elem.setAttribute("src", "../png/mainpage.png");
+        elem.setAttribute("alt", "");
+        document.getElementById("slider").appendChild(elem);
         offset += gap;
-        if (offset > gap) {
+        if (offset > 500) {
             offset = 0;
         }
         sliderLine.style.left = -offset +"px";

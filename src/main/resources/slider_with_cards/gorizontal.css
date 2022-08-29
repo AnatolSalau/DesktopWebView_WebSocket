@@ -6,32 +6,36 @@ html,
 body {
     display: flex;
     height: 100%;
+    width: 765px;
     align-items: center;
     justify-content: center;
 }
 .container {
+    padding: 0;
+    margin: 0;
     display: flex;
     width: 765px;
     justify-content: center;
 }
-.col {
+.col-9 {
     overflow: hidden;
     justify-content: center;
 }
 .slider-line {
-    margin-left: 12px;
     position: relative;
-    transition: all ease 0.5s;
+    display: inline-flex;
     left: 0;
+    transition: all ease 1s;
 }
 img {
-    margin: 5px;
+    margin:4px;
     width: 100px;
     border:2px solid #fff;
     border-radius:25px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .btn-info {
+    margin:10px;
     border: none;
     border-radius:25px;
     padding: 12px 18px;
