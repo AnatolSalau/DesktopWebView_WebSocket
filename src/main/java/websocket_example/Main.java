@@ -1,4 +1,6 @@
-import backend.EventServer;
+package websocket_example;
+
+import websocket_example.backend.EventServer;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,7 +33,7 @@ public class Main extends Application {
     @Override
         public void start(Stage primaryStage)  {
             try {
-                Parent startFxml = FXMLLoader.load(getClass().getResource("/startwindow.fxml"));
+                Parent startFxml = FXMLLoader.load(getClass().getResource("/websocket_example/startwindow.fxml"));
                 primaryStage.setTitle("GlucoReader");
                 primaryStage.setScene(new Scene(startFxml, 500, 300));
                 primaryStage.show();

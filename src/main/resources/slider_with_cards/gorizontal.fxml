@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+<StackPane  fx:id="gorizontalStackPane"
+            xmlns="http://javafx.com/javafx/18"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="slider_with_cards.GorizontalController">
+    <children>
+        <WebView fx:id="gorizontalSliderPage" prefHeight="200" prefWidth="900" />
+    </children>
+</StackPane>

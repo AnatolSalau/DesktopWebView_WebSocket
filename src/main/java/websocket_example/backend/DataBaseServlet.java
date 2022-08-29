@@ -1,4 +1,4 @@
-package backend;
+package websocket_example.backend;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

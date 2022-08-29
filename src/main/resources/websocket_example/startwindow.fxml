@@ -4,7 +4,7 @@
 <?import javafx.scene.web.WebView?>
 
 
-<StackPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartController">
+<StackPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="websocket_example.StartController">
    <children>
       <WebView fx:id="startWebView" prefHeight="400" prefWidth="600" />
    </children>

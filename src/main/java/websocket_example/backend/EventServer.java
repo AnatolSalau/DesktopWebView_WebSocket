@@ -1,4 +1,4 @@
-package backend;//
+package websocket_example.backend;//
 // ========================================================================
 // Copyright (c) Mort Bay Consulting Pty Ltd and others.
 //

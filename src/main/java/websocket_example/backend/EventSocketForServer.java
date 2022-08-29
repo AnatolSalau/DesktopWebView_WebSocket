@@ -1,4 +1,4 @@
-package backend;
+package websocket_example.backend;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;

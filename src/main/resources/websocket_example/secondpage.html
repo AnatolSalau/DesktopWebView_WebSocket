@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>SecondPage</title>
     <link rel="stylesheet" href="secondpage.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <!--Контэйнер по умолчанию содержит 12 колонок-->
@@ -32,6 +32,9 @@
                 <label for="exampleFormControlTextarea1">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
             </div>
+            <form action="http://127.0.0.1:8080/test" method="get>
+                <button type="submit" class="btn btn-success" id="messageFromServer">Message from server</button>
+            </form>
         </div>
         <div class="col">
             <div class="form-group">
@@ -42,6 +45,6 @@
     </div>
 </div>
 <script src="secondpage.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
