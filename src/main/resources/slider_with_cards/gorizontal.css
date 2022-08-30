@@ -5,18 +5,80 @@
 }
 html,
 body {
-    /*alignment bootstap's container in center body*/
+    padding: 0;
+    margin: 0;
+/*    !*alignment bootstap's container in center body*!*/
+    /*Выравниваем контэйнер по центру*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.container-fluid {
+/*    !*bootstrap container *!*/
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-sm-12 {
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    border:5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    overflow: hidden;*/
+}
+.slider-line {
+/*    !*slider line settings*!*/
+    position: relative;
+    display: inline-flex;
+    left: 0;
+    transition: all ease 0.5s;
+}
+.hiddenButton {
+    border:1px solid purple;
+    justify-content: center;
+    align-items: center;
+    --ripple-background: hsla(120, 60%,50%, 0.6);
+    --ripple-opacity: 0.9;
+    --ripple-duration: 300ms;
+}
+.left-arrow{
+    height: 400px;
+}
+.right-arrow{
+    height: 400px;
+    rotate: 180deg;
+}
+img {
+}
+/*
+html,
+body {
+    !*alignment bootstap's container in center body*!
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 .container {
-    /*bootstrap container */
+    !*bootstrap container *!
     padding: 0;
     margin: 0;
     display: flex;
-    /*width slider*/
+    !*width slider*!
     width: 465px;
     justify-content: center;
 }
@@ -28,16 +90,16 @@ body {
     justify-content: center;
 }
 .slider {
-    /*slider container*/
+    !*slider container*!
     overflow: hidden;
-    /*everithing outside will be invinsible*/
+    !*everithing outside will be invinsible*!
     justify-content: center;
     height: 120px;
     border:1px solid white;
     border-radius:35px;
 }
 .slider-line {
-    /*slider line settings*/
+    !*slider line settings*!
     position: relative;
     display: inline-flex;
     left: 0;
@@ -56,9 +118,10 @@ img {
     margin:2px;
     border-radius:25px;
     box-shadow: 1px  3px 6px rgba(0,0,0,0.16), 1px  3px 6px rgba(0,0,0,0.23);
-    /*https://www.w3schools.com/html/html_colors_hsl.asp*/
+    !*https://www.w3schools.com/html/html_colors_hsl.asp*!
     --ripple-background: hsla(0, 100%, 100%, 0.6);
     --ripple-opacity: 0.9;
     --ripple-duration: 300ms;
 }
+*/
 

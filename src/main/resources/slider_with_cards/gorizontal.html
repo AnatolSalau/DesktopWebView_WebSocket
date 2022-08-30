@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <title>Gorizontal slider with cards</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="ripple.css" />
+    <link rel="stylesheet" type="text/css" href="../ripplejs/ripple.css" />
 
     <link rel="stylesheet" href="gorizontal.css">
 
 </head>
 <body>
 
-<div class="container" >
-    <div class="col-9"effect="ripple">
-        <svg height="210" width="400">
-            <path d="M150 0 L75 200 L225 200 Z" />
-        </svg>
-    </div>
-    <div class="col-9">
-        <div class="slider">
-            <div class="slider-line" id="slider">
-                <img src="../png/mainpage.png" alt="">
-                <img src="../png/patientperformance.png" alt="">
-                <img src="../png/personaldata.png" alt="">
-                <img src="../png/print.png" alt="">
-                <img src="../png/statictic.png" alt="">
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-sm-12">
+            <div  class="hiddenButton" effect="ripple">
+                <img src="../png/left-arrow.png" class="left-arrow">
+            </div>
+            
+            <div class="slider">
+                <div class="slider-line" id="slider">
+                    <img src="../png/mainpage.png" alt="">
+                    <img src="../png/patientperformance.png" alt="">
+                    <img src="../png/personaldata.png" alt="">
+                    <img src="../png/print.png" alt="">
+                    <img src="../png/statictic.png" alt="">
+                </div>
+            </div>
+            <div  class="hiddenButton" effect="ripple">
+                <img src="../png/left-arrow.png" class="right-arrow">
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-info" id="btn_right" effect="ripple">Right</button>
 </div>
 
 <script src="../bootstrap/js/bootstrap.min.js"></script>
-<script src="ripple.js"></script>
+<script src="../ripplejs/ripple.js"></script>
 <script src="gorizontal.js"></script>
 </body>
 </html>
