@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Gorizontal slider with cards</title>
-<!--    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="../MDB/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../MDB/css/mdb.min.css">
-    <link rel="stylesheet" href="../MDB/css/style.css">
-<!--    <link rel="stylesheet" type="text/css" href="../ripplejs/ripple.css" />-->
+    <link rel="stylesheet" href="../libs/fontawesome-free-5.15.4/css/all.css">
+    <link rel="stylesheet" href="../libs/roboto_font/roboto.css">
+    <link rel="stylesheet" href="../libs/MDB/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="../libs/MDB/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../libs/ripplejs/ripple.css" />
 
     <link rel="stylesheet" href="gorizontal.css">
 
 </head>
 <body>
-<button type="button" class="btn btn-info" >Info</button>
 <div class="container-fluid" >
     <div class="row">
         <div class="col-sm-12">
-            <div  class="hiddenButton" effect="ripple">
-                <img src="../png/left-arrow.png" class="left-arrow">
-            </div>
-            
+            <button type="button" class="btn btn-success" id="turnLeft">
+                <i class=" fas fa-chevron-left "></i>
+            </button>
             <div class="slider">
                 <div class="slider-line" id="slider">
-                    <img src="../png/mainpage.png" alt="">
-                    <img src="../png/patientperformance.png" alt="">
-                    <img src="../png/personaldata.png" alt="">
-                    <img src="../png/print.png" alt="">
-                    <img src="../png/statictic.png" alt="">
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-home"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-folder-open"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-chart-line"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-print"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-cog"></i>
+                    </button>
                 </div>
             </div>
-            <div  class="hiddenButton" effect="ripple">
-                <img src="../png/left-arrow.png" class="right-arrow">
-            </div>
+            <button type="button" class="btn btn-success" id="turnRight">
+                <i class="fas fa-chevron-right "></i>
+            </button>
         </div>
     </div>
 </div>
-<!-- Basic dropdown -->
-<button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">Basic dropdown</button>
+<script src="../libs/MDB/js/jquery.min.js"></script>
+<script src="../libs/MDB/js/popper.min.js"></script>
+<script src="../libs/MDB/js/bootstrap.min.js"></script>
+<script src="../libs/MDB/js/mdb.min.js"></script>
 
-<div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-</div>
-<!-- Basic dropdown -->
-
-
-<script src="../MDB/js/jquery.min.js"></script>
-<script src="../MDB/js/popper.min.js"></script>
-<script src="../MDB/js/bootstrap.min.js"></script>
-<script src="../MDB/js/mdb.min.js"></script>
-<!--<script src="../bootstrap/js/bootstrap.min.js"></script>-->
-<!--<script src="../ripplejs/ripple.js"></script>-->
+<script src="../libs/ripplejs/ripple.js"></script>
 <script src="gorizontal.js"></script>
 </body>
 </html>

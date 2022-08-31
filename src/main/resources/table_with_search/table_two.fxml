@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+<StackPane  fx:id="tableTwoStackPane"
+            xmlns="http://javafx.com/javafx/18"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="table_with_search.TableTwoController">
+    <children>
+        <WebView fx:id="tableTwo" prefHeight="900" prefWidth="900" />
+    </children>
+</StackPane>

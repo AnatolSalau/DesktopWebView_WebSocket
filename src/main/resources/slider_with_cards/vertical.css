@@ -1,12 +1,81 @@
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_desc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:before {
-    bottom: .5em;
+/*remove indents body*/
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    /*    !*alignment bootstap's container in center body*!*/
+    /*Выравниваем контэйнер по центру*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.container-fluid {
+    background-color: lightcyan;
+    /*    !*bootstrap container *!*/
+    /*    border:1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-sm-12 {
+    height: 555px;
+    /*    border:1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    /*    border:5px solid green;*/
+    justify-content: center;
+    overflow: hidden;
+}
+.slider-line {
+    flex-direction: column;
+    /*    !*slider line settings*!*/
+    position: relative;
+    display: inline-flex;
+    top: 0;
+    transition: all ease 0.5s;
+}
+.hiddenButton {
+    /*    border:1px solid purple;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+i {
+    color: black;
+    font-size:4em;
+}
+#turnTop, #turnDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+}
+.fa-chevron-left {
+    transform: rotate(90deg);
+}
+.fa-chevron-right {
+    transform: rotate(90deg);
 }

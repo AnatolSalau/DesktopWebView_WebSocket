@@ -22,14 +22,14 @@ public class Main extends Application {
             //gorizontal slider window
             Parent gorizontalSliderFxml = FXMLLoader.load(getClass().getResource("/slider_with_cards/gorizontal.fxml"));
             primaryStage.setTitle("Gorizontal slider");
-            primaryStage.setScene(new Scene(gorizontalSliderFxml,1000,200));
+            primaryStage.setScene(new Scene(gorizontalSliderFxml,800,200));
             primaryStage.show();
             //Show window 2
             //vertical slider window
             Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/slider_with_cards/vertical.fxml"));
             Stage secondStage = new Stage();
             secondStage.setTitle("Vertical slider");
-            secondStage.setScene(new Scene(verticalSliderFxml, 700, 200));
+            secondStage.setScene(new Scene(verticalSliderFxml, 200, 800));
             secondStage.show();
         }
         catch (Exception ex) {

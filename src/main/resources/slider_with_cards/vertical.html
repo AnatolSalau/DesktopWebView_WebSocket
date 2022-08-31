@@ -3,79 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Gorizontal slider with cards</title>
-    <!--    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="../MDB/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../MDB/css/mdb.min.css">
-    <link rel="stylesheet" href="../MDB/css/style.css">
-    <!--    <link rel="stylesheet" type="text/css" href="../ripplejs/ripple.css" />-->
-
-    <link rel="stylesheet" href="gorizontal.css">
-
+<!--LIBS----------------------------------------------------------------------------->
+    <link rel="stylesheet" href="../libs/fontawesome-free-5.15.4/css/all.css">
+    <link rel="stylesheet" href="../libs/roboto_font/roboto.css">
+    <link rel="stylesheet" href="../libs/MDB/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="../libs/MDB/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../libs/ripplejs/ripple.css" />
+<!--MY CSS----------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="vertical.css">
 </head>
 <body>
-
-<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-    <thead>
-    <tr>
-        <th class="th-sm">Name
-        </th>
-        <th class="th-sm">Position
-        </th>
-        <th class="th-sm">Office
-        </th>
-        <th class="th-sm">Age
-        </th>
-        <th class="th-sm">Start date
-        </th>
-        <th class="th-sm">Salary
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
-        <td>Edinburgh</td>
-        <td>61</td>
-        <td>2011/04/25</td>
-        <td>$320,800</td>
-    </tr>
-    <tr>
-        <td>Garrett Winters</td>
-        <td>Accountant</td>
-        <td>Tokyo</td>
-        <td>63</td>
-        <td>2011/07/25</td>
-        <td>$170,750</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <th>Name
-        </th>
-        <th>Position
-        </th>
-        <th>Office
-        </th>
-        <th>Age
-        </th>
-        <th>Start date
-        </th>
-        <th>Salary
-        </th>
-    </tr>
-    </tfoot>
-</table>
-
-<script src="../MDB/js/jquery.min.js"></script>
-<script src="../MDB/js/popper.min.js"></script>
-<script src="../MDB/js/bootstrap.min.js"></script>
-<script src="../MDB/js/mdb.min.js"></script>
-<!--<script src="../bootstrap/js/bootstrap.min.js"></script>-->
-<!--<script src="../ripplejs/ripple.js"></script>-->
+<!--APP'S BODY------------------------------------------------------------------------------->
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-success" id="turnTop">
+                <i class=" fas fa-chevron-left"></i>
+            </button>
+            <div class="slider">
+                <div class="slider-line" id="slider">
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-home"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-folder-open"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-chart-line"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-print"></i>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success" id="turnDown">
+                <i class="fas fa-chevron-right "></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!--LIBS----------------------------------------------------------------------------->
+<script src="../libs/MDB/js/jquery.min.js"></script>
+<script src="../libs/MDB/js/popper.min.js"></script>
+<script src="../libs/MDB/js/bootstrap.min.js"></script>
+<script src="../libs/MDB/js/mdb.min.js"></script>
+<script src="../libs/ripplejs/ripple.js"></script>
+<!--MY JS------------------------------------------------------------------------------------>
 <script src="vertical.js"></script>
-<script>
-    $().DataTables();
-</script>
 </body>
 </html>
+
