@@ -3,6 +3,9 @@
     overflow: auto;
     display:inline-block;
 }
-.table-earnings {
-    background: #F3F5F6;
+#myTab1 {
+    background-color: #0e8c8c;
+}
+#myTab2 {
+    background-color: #b0bec5;
 }

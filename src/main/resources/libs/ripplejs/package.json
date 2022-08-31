@@ -1,25 +1,24 @@
 {
-  "name": "flexiripplejs",
-  "version": "1.0.1",
-  "description": "A flexible javascript library for adding ripple effects to HTML elements based on mouse events",
-  "main": "ripple.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "Ripple.js",
+  "author": "Jacob Kelley",
+  "version": "1.2.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udezueoluomachi/ripplejs.git"
+    "url": "https://github.com/jakiestfu/Ripple.js.git"
   },
-  "keywords": [
-    "ripplejs",
-    "flexiripplejs",
-    "ui library"
-  ],
-  "author": "Udezue Oluomachi Chimaobi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/udezueoluomachi/ripplejs/issues"
+  "scripts": {
+    "bower": "./node_modules/bower/bin/bower install",
+    "build": "./node_modules/grunt-cli/bin/grunt",
+    "build-watch": "./node_modules/grunt-cli/bin/grunt develop"
   },
-  "homepage": "https://github.com/udezueoluomachi/ripplejs#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "bower": "*",
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "0.10.0",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-uglify": "0.2.5",
+    "grunt-contrib-watch": "~0.5.3"
+  }
 }
