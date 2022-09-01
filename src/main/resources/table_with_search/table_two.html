@@ -11,87 +11,31 @@
     <link rel="stylesheet" href="../libs/MDB/css/style.css">
     <link rel="stylesheet" type="text/css" href="../libs/ripplejs/src/ripple.css"/>
     <link href="../libs/Semantic/Semantic/semantic.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../libs/JqueryUI/jquery-ui.min.css">
+    <!-- blue theme stylesheet with additional css styles added in v2.0.17 -->
+    <link rel="stylesheet" href="../libs/tablesorter/css/theme.blue.css">
     <!--MY CSS----------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="table_two.css">
 </head>
 <body>
 <!--APP'S BODY----/dist/theme/mermaid.min.css--------------------------------------------------------------------------->
 <div class="tableWrapper">
-    <table class="ui celled table">
+    <table class="full-width-table tablesorter tablesorter-blue tablesorterc8633a048359e hasResizable" role="grid">
         <thead>
-        <tr>
-            <th>
-                <div class="headColWrapperFirst">Name</div>
-            </th>
-            <th>
-                <div class="headColWrapper">Age</div>
-            </th>
-            <th>
-                <div class="headColWrapper">Salary</div>
-            </th>
-            <th>
-                <div class="headColWrapperLast">Job</div>
-            </th>
+        <tr role="row" class="tablesorter-headerRow">
+            <th data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 130.297px;" aria-sort="none" aria-label="First Name: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">First Name</div></th>
+            <th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 160.297px;" aria-sort="none" aria-label="Last Name: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Last Name</div></th>
+            <th class="resizable-false tablesorter-header tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 40px;" aria-sort="none" aria-label="Age: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Age</div></th>
+            <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 145.297px;" aria-sort="none" aria-label="Total: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Total</div></th>
+            <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 100px;" aria-sort="none" aria-label="Discount: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Discount</div></th>
+            <th data-column="5" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none; width: 969.109px;" aria-sort="none" aria-label="Date: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Date</div></th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <td data-label="Name">
-                <div class="dataColWrapperFirst">James</div>
-            </td>
-            <td data-label="Age">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Salary">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Job">
-                <div class="dataColWrapperLast">Engineer</div>
-            </td>
-        </tr>
-        <tr>
-            <td data-label="Name">
-                <div class="dataColWrapperFirst">James</div>
-            </td>
-            <td data-label="Age">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Salary">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Job">
-                <div class="dataColWrapperLast">Engineer</div>
-            </td>
-        </tr>
-        <tr>
-            <td data-label="Name">
-                <div class="dataColWrapperFirst">James</div>
-            </td>
-            <td data-label="Age">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Salary">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Job">
-                <div class="dataColWrapperLast">Engineer</div>
-            </td>
-        </tr>
-        <tr>
-            <td data-label="Name">
-                <div class="dataColWrapperFirst">James</div>
-            </td>
-            <td data-label="Age">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Salary">
-                <div class="dataColWrapper">24</div>
-            </td>
-            <td data-label="Job">
-                <div class="dataColWrapperLast">Engineer</div>
-            </td>
-        </tr>
+        <tbody aria-live="polite" aria-relevant="all">
+        <tr role="row" class="odd"><td>Peter</td><td>Parker</td><td>28</td><td>$9.99</td><td>20%</td><td>Jul 6, 2006 8:14 AM</td></tr>
+        <tr role="row" class="even"><td>John</td><td>Hood</td><td>33</td><td>$19.99</td><td>25%</td><td>Dec 10, 2002 5:14 AM</td></tr>
+        <tr role="row" class="odd"><td>Clark</td><td>Kent</td><td>18</td><td>$15.89</td><td>44%</td><td>Jan 12, 2003 11:14 AM</td></tr>
+        <tr role="row" class="even"><td>Bruce</td><td>Almighty</td><td>45</td><td>$153.19</td><td>44%</td><td>Jan 18, 2001 9:12 AM</td></tr>
+        <tr role="row" class="odd"><td>Bruce</td><td>Evans</td><td>22</td><td>$13.19</td><td>11%</td><td>Jan 18, 2007 9:12 AM</td></tr>
         </tbody>
     </table>
 </div>
@@ -108,10 +52,10 @@
         crossorigin="anonymous">
 </script>
 <script src="../libs/Semantic/Semantic/semantic.min.js"></script>
-<script src="../libs/JqueryUI/jquery-ui.min.js"></script>
+<script src="../libs/tablesorter/js/jquery.tablesorter.js"></script>
+<link rel="stylesheet" href="../libs/tablesorter/js/jquery.tablesorter.widgets.js">
+
 <!--MY JS------------------------------------------------------------------------------------>
-<!-- The plugin jQuery.resizableColumns -->
-<script src="../libs/resizableColumns.min.js"></script>
 <script src="table_two.js"></script>
 </body>
 </html>
