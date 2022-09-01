@@ -1,11 +1,11 @@
-.table-wrapper {
-    max-height: 100px;
-    overflow: auto;
-    display:inline-block;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#myTab1 {
-    background-color: #0e8c8c;
-}
-#myTab2 {
-    background-color: #b0bec5;
+.tableWrapper {
+    padding: 0px;
+    margin: 0px;
+    width: 600px;
+    height: 400px;
 }

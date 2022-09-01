@@ -9,157 +9,91 @@
     <link rel="stylesheet" href="../libs/MDB/css/bootstrap.min.css">
     <link rel="stylesheet" href="../libs/MDB/css/mdb.min.css">
     <link rel="stylesheet" href="../libs/MDB/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../libs/ripplejs/src/ripple.css" />
-    <link href="../libs/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../libs/ripplejs/src/ripple.css"/>
     <link href="../libs/Semantic/Semantic/semantic.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../libs/JqueryUI/jquery-ui.min.css">
     <!--MY CSS----------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="table_two.css">
 </head>
 <body>
 <!--APP'S BODY----/dist/theme/mermaid.min.css--------------------------------------------------------------------------->
-!-- Default unchecked -->
-<div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-    <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
-</div>
-<div class="container">
-    <br>
-    <div class="row">
-        <div class="col-xs-8">
-            <div class="table-wrapper">
-                <table class="table table-earnings table-earnings__challenge">
-                    <thead>
-                    <tr>
-                        <th>TITLE</th>
-                        <th>DATE TAKEN</th>
-                        <th>STATUS</th>
-                        <th>AMOUNT</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Day 1</td>
-                        <td>11/08/2016</td>
-                        <td>
-                            <img src="https://www.srx.com.sg/srx/home/images/tracker/icon_social_sms.png" alt="">
-                        </td>
-                        <td>$1.00</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="ui form">
-    <div class="grouped fields">
-        <label>Outbound Throughput</label>
-        <div class="field">
-            <div class="ui slider checkbox">
-                <input type="radio" name="throughput" checked="checked">
-                <label>20 mbps max</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui slider checkbox">
-                <input type="radio" name="throughput">
-                <label>10mbps max</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui slider checkbox">
-                <input type="radio" name="throughput">
-                <label>5mbps max</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui slider checkbox checked">
-                <input type="radio" name="throughput">
-                <label>Unmetered</label>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="ui checked checkbox">
-    <input type="checkbox" checked="">
-    <label>Active</label>
-</div>
-<div class="ui left floated compact segment">
-    <div class="ui fitted checkbox">
-        <input type="checkbox">
-        <label></label>
-    </div>
-</div>
-<div class="ui left floated compact segment">
-    <div class="ui fitted slider checkbox">
-        <input type="checkbox">
-        <label></label>
-    </div>
-</div>
-<div class="ui left floated compact segment">
-    <div class="ui fitted toggle checkbox">
-        <input type="checkbox">
-        <label></label>
-    </div>
-</div>
-<div class="ui top attached tabular menu">
-    <a class="item active  " id="myTab1">
-        Anatoly Salov
-    </a>
-    <a class="item ui basic" >
-        Photos
-    </a>
-    <div class="right menu">
-        <div class="item">
-            <div class="ui transparent icon input">
-                <input type="text" placeholder="Search users...">
-                <i class="search link icon"></i>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="ui bottom attached segment">
-    <p></p>
+<div class="tableWrapper">
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>
+                <div class="headColWrapperFirst">Name</div>
+            </th>
+            <th>
+                <div class="headColWrapper">Age</div>
+            </th>
+            <th>
+                <div class="headColWrapper">Salary</div>
+            </th>
+            <th>
+                <div class="headColWrapperLast">Job</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Name">
+                <div class="dataColWrapperFirst">James</div>
+            </td>
+            <td data-label="Age">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Salary">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Job">
+                <div class="dataColWrapperLast">Engineer</div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Name">
+                <div class="dataColWrapperFirst">James</div>
+            </td>
+            <td data-label="Age">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Salary">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Job">
+                <div class="dataColWrapperLast">Engineer</div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Name">
+                <div class="dataColWrapperFirst">James</div>
+            </td>
+            <td data-label="Age">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Salary">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Job">
+                <div class="dataColWrapperLast">Engineer</div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Name">
+                <div class="dataColWrapperFirst">James</div>
+            </td>
+            <td data-label="Age">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Salary">
+                <div class="dataColWrapper">24</div>
+            </td>
+            <td data-label="Job">
+                <div class="dataColWrapperLast">Engineer</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 <!--LIBS----------------------------------------------------------------------------->
 <script src="../libs/MDB/js/jquery.min.js"></script>
@@ -167,7 +101,6 @@
 <script src="../libs/MDB/js/bootstrap.min.js"></script>
 <script src="../libs/MDB/js/mdb.min.js"></script>
 <script src="../libs/ripplejs/src/ripple.js"></script>
-<script src="../libs/gridjs/dist/gridjs.umd.js"></script>
 <script src="../libs/Semantic/Semantic/"></script>
 <script
         src="../libs/MDB/js/jquery.min.js"
@@ -175,7 +108,10 @@
         crossorigin="anonymous">
 </script>
 <script src="../libs/Semantic/Semantic/semantic.min.js"></script>
+<script src="../libs/JqueryUI/jquery-ui.min.js"></script>
 <!--MY JS------------------------------------------------------------------------------------>
+<!-- The plugin jQuery.resizableColumns -->
+<script src="../libs/resizableColumns.min.js"></script>
 <script src="table_two.js"></script>
 </body>
 </html>
