@@ -1,3 +1,4 @@
+
 $('.table td').resizable({
     resize: function(event,ui) {
         var col = $(this).index()+1;

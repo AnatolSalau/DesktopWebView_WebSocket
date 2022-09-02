@@ -12,7 +12,7 @@
     width: 600px;
     overflow-y: scroll;
 }
-.tableWrapper {
+.tableBodyWrapper {
     width: 1000px;
     white-space: nowrap;
 }
