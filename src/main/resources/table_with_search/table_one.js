@@ -17,7 +17,8 @@ window.onload = function () {
     inputSearch.addEventListener("input", (e) => {
         //Обращаемся к элементу который вызвал это событие
         text = e.target.value;
-        console.log(text)
+        console.log(text);
+        let userRows = document.querySelectorAll('.userRow');
         let resizable = document.querySelectorAll('.ui-resizable');
 
         resizable.forEach((item, index) => {
@@ -28,5 +29,6 @@ window.onload = function () {
             }
         })
     })
+
 }
 
