@@ -2,7 +2,13 @@
     padding: 0px;
     margin: 0px;
 }
-
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
 .tableWrapper {
     width: 600px;
     /*    border: solid 1px white;*/
@@ -133,4 +139,9 @@ body > div.container > div > div.tableScrollWrapper > div > table {
 
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+.hid {
+    display: none;
+    /*color: #0e8c8c;*/
 }

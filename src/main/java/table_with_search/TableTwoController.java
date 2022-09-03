@@ -20,6 +20,7 @@ public class TableTwoController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        tableTwo.setContextMenuEnabled(false);
         engine = tableTwo.getEngine();
         engine.setJavaScriptEnabled(true);
         engine.load(link);

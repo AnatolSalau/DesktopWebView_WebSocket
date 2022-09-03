@@ -8,6 +8,6 @@
            xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="table_with_search.TableTwoController">
     <children>
-        <WebView fx:id="tableTwo" prefHeight="900" prefWidth="900" />
+        <WebView fx:id="tableTwo"  prefHeight="900" prefWidth="900" />
     </children>
 </StackPane>
