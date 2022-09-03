@@ -25,23 +25,8 @@ window.onload = function () {
                 console.log(item);
                 let parent = item.parentNode;
                 parent.classList.add('hid');
-
             }
         })
     })
-    //get all user's rows
-    /*let userRowsList = document.querySelectorAll('.userRow');
-    for (let i = 0; i < userRowsList.length; i++) {
-       let userRowsListElements = userRowsList[i];
-        console.log(userRowsListElements)
-
-     let userTdAll = userRowsListElements.querySelectorAll('td');
-        console.log(userTdAll);
-    }*/
-
-
-
-
-
 }
 
