@@ -141,7 +141,7 @@ body > div.container > div > div.tableScrollWrapper > div > table {
     padding-bottom: 0 !important;
 }
 
-.hid {
+.hiddenUserRow {
     display: none;
     /*color: #0e8c8c;*/
 }
