@@ -6,6 +6,18 @@ $('.table td').resizable({
         $(this).parent().find('td').height(ui.size.height);
     }
 });
+$('.max.example .ui.normal.dropdown')
+    .dropdown({
+        maxSelections: 3
+    })
+;
+$('.max.example .ui.special.dropdown')
+    .dropdown({
+        useLabels: false,
+        maxSelections: 3
+    })
+;
+
 //Динамический поиск в таблице
 let inputSearch;
 let buttonSearch;

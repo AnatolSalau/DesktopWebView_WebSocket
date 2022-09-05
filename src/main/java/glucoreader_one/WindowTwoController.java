@@ -17,7 +17,7 @@ public class WindowTwoController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        windowTwo.setContextMenuEnabled(false);
+        /*windowTwo.setContextMenuEnabled(false);*/
         engine = windowTwo.getEngine();
         engine.setJavaScriptEnabled(true);
         engine.load(link);

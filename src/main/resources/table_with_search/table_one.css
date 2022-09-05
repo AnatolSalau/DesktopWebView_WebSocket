@@ -145,3 +145,8 @@ body > div.container > div > div.tableScrollWrapper > div > table {
     display: none;
     /*color: #0e8c8c;*/
 }
+.inputAndDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
