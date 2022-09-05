@@ -30,3 +30,9 @@ body ::-webkit-scrollbar {
     justify-content:center ;
     align-items:center;
 }
+#menu > div.ui.bottom.attached.tab.segment {
+    border-radius: 5px!important;
+}
+.ui.tabular.menu {
+    border-bottom: transparent!important;
+}
