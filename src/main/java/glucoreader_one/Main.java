@@ -24,7 +24,7 @@ public class Main extends Application {
             Parent gorizontalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_one.fxml"));
             primaryStage.setTitle("Window One");
             primaryStage.getIcons().add(icon);
-            primaryStage.setScene(new Scene(gorizontalSliderFxml,800,600));
+            primaryStage.setScene(new Scene(gorizontalSliderFxml));
             primaryStage.setX(100);
             primaryStage.show();
             //Show window 2
@@ -32,7 +32,7 @@ public class Main extends Application {
             Stage secondStage = new Stage();
             secondStage.setTitle("Window Two");
             secondStage.getIcons().add(icon);
-            secondStage.setScene(new Scene(verticalSliderFxml, 800, 600));
+            secondStage.setScene(new Scene(verticalSliderFxml));
             secondStage.show();
         }
         catch (Exception ex) {

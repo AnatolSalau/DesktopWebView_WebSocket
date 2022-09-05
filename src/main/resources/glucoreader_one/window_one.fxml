@@ -8,6 +8,6 @@
            xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="glucoreader_one.WindowOneController">
     <children>
-        <WebView fx:id="windowOne" prefHeight="900" prefWidth="900" />
+        <WebView fx:id="windowOne"/>
     </children>
 </StackPane>
