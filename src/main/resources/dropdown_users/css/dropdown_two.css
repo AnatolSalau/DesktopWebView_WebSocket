@@ -1,0 +1,17 @@
+body ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+}
+.container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown {
+    width: 250px;
+}
+i {
+    color: dodgerblue;
+}
