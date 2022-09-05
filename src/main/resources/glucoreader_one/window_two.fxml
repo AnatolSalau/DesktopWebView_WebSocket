@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+<StackPane  fx:id="windowTwoStackPane"
+            xmlns="http://javafx.com/javafx/18"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="glucoreader_one.WindowTwoController">
+    <children>
+        <WebView fx:id="windowTwo"  prefHeight="900" prefWidth="900" />
+    </children>
+</StackPane>

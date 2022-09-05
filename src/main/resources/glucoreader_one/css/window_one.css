@@ -1,0 +1,23 @@
+body ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    border: 3px solid black;
+    height: 100%;
+}
+.row {
+    border: 1px solid red;
+}
+.col{
+    border: 1px solid darkgreen;
+}
+#headerWindowOne {
+    height: 15%;
+}
+#centerWindow {
+    height: 100%;
+}
