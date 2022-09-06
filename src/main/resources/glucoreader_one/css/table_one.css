@@ -2,7 +2,7 @@
 .tableWrapper {
     width: 600px;
     /*    border: solid 1px white;*/
-    margin-top: 100px;
+/*    margin-top: 100px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,6 +142,9 @@ body > div.container > div > div.tableScrollWrapper > div > table {
 }
 .ui.input>input:focus {
     border-color:RGB(64, 176, 165);
+}
+#doctorPacientRow {
+    height: 15%;
 }
 #doctorPacientRow, #tableRow {
     border: 1px solid black;

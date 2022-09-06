@@ -7,8 +7,6 @@ function main (event) {
     enableButtonsEffects();
     enableHeaderButtonEffects();
     enableResizableColomnsTable();
-    //Динамический поиск в таблице
-
     enableSearch();
 }
 
@@ -55,7 +53,6 @@ function enableButtonsEffects() {
         rate: function(pxPerSecond) {
             return pxPerSecond;
         },
-
         easing: 'linear' // The CSS3 easing function of the ripple
     });
 }
