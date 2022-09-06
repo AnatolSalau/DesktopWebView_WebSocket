@@ -147,7 +147,7 @@ body > div.container > div > div.tableScrollWrapper > div > table {
     height: 15%;
 }
 #doctorPacientRow, #tableRow {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     display: flex;
     justify-content: center;
     align-items: center;

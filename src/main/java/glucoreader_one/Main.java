@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.paint.LinearGradient;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
     @Override
@@ -22,10 +24,10 @@ public class Main extends Application {
             //Show window 1
             Image icon = new Image("/images/png/logoDHnew.png");
             Parent gorizontalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_one.fxml"));
+/*            primaryStage.initStyle(StageStyle.UNDECORATED);*/
             primaryStage.setTitle("Window One");
             primaryStage.getIcons().add(icon);
-            primaryStage.setScene(new Scene(gorizontalSliderFxml,900,650));
-            primaryStage.setX(100);
+            primaryStage.setScene(new Scene(gorizontalSliderFxml,1200,900));
             primaryStage.show();
             //Show window 2
             Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_two.fxml"));
