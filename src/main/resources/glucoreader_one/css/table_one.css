@@ -1,0 +1,151 @@
+
+.tableWrapper {
+    width: 600px;
+    /*    border: solid 1px white;*/
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.tableScrollWrapper {
+    padding: 0px;
+    margin: 0;
+    height: 400px;
+    width: 600px;
+    overflow-y: scroll;
+}
+
+.tableBodyWrapper {
+    width: 1000px;
+    white-space: nowrap;
+}
+
+#cardHeader {
+    z-index: 100;
+    height: 50px;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#cardFooter {
+    z-index: 100;
+    height: 50px;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.ui.table {
+    border-radius: 0;
+}
+
+.card-header:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.tableScrollWrapper {
+    background-color: white;
+}
+
+body ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body ::-webkit-scrollbar {
+    background: white;
+}
+
+#headerStycky {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    /*box-shadow: -6px 0 white, 6px 0 white, 0 7px 5px -2px black;*/
+}
+
+.bg-success {
+    height: 25px;
+    border-radius:  0  0 5px 5px ;
+}
+
+.card-body {
+    text-align: left;
+    padding: 0;
+}
+
+td.ui-resizable {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    /*    padding-top: 0!important;
+        padding-bottom: 0!important;*/
+}
+
+body > div.container > div > div.tableScrollWrapper > div > table {
+    border: 0;
+}
+
+#headerStycky > td:nth-child(0) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(1) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(2) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(3) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(4) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(5) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#headerStycky > td:nth-child(6) {
+
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.hiddenUserRow {
+    display: none;
+    /*color: #0e8c8c;*/
+}
+.inputAndDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ui.input>input:focus {
+    border-color:RGB(64, 176, 165);
+}
+#doctorPacientRow, #tableRow {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

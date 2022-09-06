@@ -1,0 +1,74 @@
+.slider {
+    /*    border:5px solid green;*/
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider-line {
+    height: 380px;
+    flex-direction: column;
+    position: relative;
+    display: inline-flex;
+    top: 0;
+    transition: all ease 0.5s;
+}
+.sliderWrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+.hiddenButton {
+    border:1px solid purple;
+    justify-content: center;
+    align-items: center;
+}
+#slider > button:nth-child(3) {
+    width: 85px!important;
+    height: 85px!important;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: RGB(49 71 66)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px!important;
+    height: 85px!important;
+    flex-direction: column;
+}
+.fas {
+    color: RGB(167, 239, 225);
+    font-size:4em;
+}
+/*.fas:hover {
+    color: RGB(64, 176, 165);
+    font-size:4.1em;
+}*/
+#turnTop, #turnDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.fa-chevron-left {
+    transform: rotate(90deg);
+}
+.fa-chevron-right {
+    transform: rotate(90deg);
+}
+.sliderButtonText {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+.sliderButtonText:hover {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}

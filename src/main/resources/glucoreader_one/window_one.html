@@ -15,6 +15,8 @@
 
     <!--MY CSS----------------------------------------------------------------------------------------->
     <link href="css/window_one.css" rel="stylesheet">
+    <link href="css/leftSlider.css" rel="stylesheet">
+<!--    <link href="css/table_one.css" rel="stylesheet">-->
     <!--LIBS----------------------------------------------------------------------------->
     <script src="../libs/MDB/js/jquery.min.js"></script>
     <script src="../libs/MDB/js/popper.min.js"></script>
@@ -31,14 +33,301 @@
 <body>
 <div class="container-fluid">
     <div class="row" id="headerWindowOne">
-        Row 1
+        <header class="logoWrapper">
+            <nav class="navbar  navbar-expand-lg navbar-dark scrolling-navbar">
+                <img class="ui image" id="logo" src="../images/png/logoDHnew.png">
+                <a class="navbar-brand" href="#"><strong>Gluco Assist</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
     </div>
     <div class="row" id="centerWindow">
-        <div class="col-sm-2" id="sliderCol">Col 1</div>
-        <div class="col-sm" id="menuCol">Col 2</div>
+        <div class="col-sm-2" id="sliderCol">
+            <div class="sliderWrapper">
+                <button type="button" class="btn" id="turnTop">
+                    <i class=" fas fa-chevron-left"></i>
+                </button>
+                <div class="slider">
+                    <div class="slider-line" id="slider">
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-home"></i>
+                            <i class="sliderButtonText">Главное меню</i>
+                        </button>
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-user"></i>
+                            <i class="sliderButtonText">Показатели пациента</i>
+                        </button>
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-folder-open"></i>
+                            <i class="sliderButtonText">Статистика</i>
+                        </button>
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-chart-line"></i>
+                            <i class="sliderButtonText">Печать</i>
+                        </button>
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-print"></i>
+                            <i class="sliderButtonText">Настройки</i>
+                        </button>
+                        <button type="button" class="btn sliderButton">
+                            <i class="fas fa-cog"></i>
+                            <i class="sliderButtonText"> Персональные данные</i>
+                        </button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" id="turnDown">
+                    <i class="fas fa-chevron-right "></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm" id="menuCol">
+            <div class="row" id="doctorPacientRow">
+                <div class="ui icon input" >
+                    <input type="text" id="inputSearch"  placeholder="Search...">
+                    <i class="circular search link icon" id="buttonSearch"></i>
+                </div>
+            </div>
+            <div class="row" id="tableRow">
+                <div class="tableWrapper z-depth-2">
+                    <div class="card text-white bg-info " id="cardHeader">
+                        <div class="card-body">
+                            <h5 class="card-title">Table header</h5>
+                        </div>
+                    </div>
+                    <div class="tableScrollWrapper">
+                        <div class="tableBodyWrapper" >
+                            <table class="ui celled  striped table" >
+                                <tbody >
+                                <tr id="headerStycky">
+                                    <td>
+                                        <div class="card text-white bg-success hoverable">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Colomn header</h5>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="card text-white bg-success hoverable">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Colomn header</h5>
+                                        </div>
+                                    </div></td>
+                                    <td><div class="card text-white bg-success hoverable">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Colomn header</h5>
+                                        </div>
+                                    </div></td>
+                                    <td><div class="card text-white bg-success hoverable">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Colomn header</h5>
+                                        </div>
+                                    </div></td>
+                                    <td><div class="card text-white bg-success hoverable">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Colomn header</h5>
+                                        </div>
+                                    </div></td>
+                                    <td><div class="card text-white bg-success hoverable">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Colomn header</h5>
+                                        </div>
+                                    </div></td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>test</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="file outline icon"></i>package.json</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td class="collapsing"><i class="folder icon"></i>node_modules</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>test</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="folder icon"></i>build</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <tr class="userRow">
+                                    <td><i class="file outline icon"></i>package.json</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td>Initial commit</td>
+                                    <td class="lastCell">10 hours ago</td>
+                                </tr>
+                                <!--                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>
+                                                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>
+                                                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>
+                                                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>
+                                                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>
+                                                    <tr class="userRow">
+                                                        <td><i class="file outline icon"></i>Gruntfile.js</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td>Initial commit</td>
+                                                        <td class="lastCell">10 hours ago</td>
+                                                    </tr>-->
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="card text-white bg-info" id="cardFooter">
+                        <div class="card-body">
+                            <h5 class="card-title">Table footer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
 
 </body>
 </html>

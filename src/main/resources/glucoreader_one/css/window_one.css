@@ -3,27 +3,144 @@ body ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
+body {
+
+}
 .container-fluid {
-    border: 2px solid black;
+/*    border: 2px solid black;*/
     height: 100%;
 }
-
-#headerWindowOne {
-/*    margin: 5px;*/
-    border: 2px solid red;
+#headerWindowOne{
+    background-color: RGB(64 176 165);
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.logoWrapper {
+/*    border: 2px solid red;*/
+    width: 100%;
+    z-index: 200;
     height: 15%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: transparent;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24)!important;
+
+}
+#logo {
+    max-height: 30px;
+    filter: grayscale(1) brightness(900%);
+}
+.navbar-brand {
+    margin-left: 50px;
+    font-size: 25px;
+    color: whitesmoke;
 }
 #centerWindow {
-    height: 85%;
-/*    margin: 5px;*/
-    border: 2px solid purple;
-    /*height: 100%;*/
+    height: 91%;
+/*    border: 2px solid purple;*/
+    margin-bottom: 0;
 }
 #sliderCol {
-/*    margin: 5px;*/
-    border: 2px solid green;
+/*    border: 2px solid green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: RGB(49 71 66)!important;
 }
-#menuCol {
-/*    margin: 5px;*/
-    border: 2px solid blue;
+
+.navbar {
+    background-color: RGB(64 176 165)!important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*------------------------------------------------------*/
+.button {
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)!important;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)!important;
+}
+.button:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22)!important;
+}
+.active {
+    background-color: rgb(250, 250, 250)!important;
+    z-index: 50;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)!important;
+}
+#menu > div.ui.top.attached.tabular.menu {
+    width: 500px;
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+}
+#menu > div.ui.bottom.attached.tab.segment {
+    border-radius: 5px!important;
+}
+.ui.tabular.menu {
+    border-bottom: transparent!important;
+}
+/*---------------------------------------------------------------------*/
+.wrapper{
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+.wrapper .menu{
+    padding: 10px 12px;
+}
+.content .item{
+    list-style: none;
+    font-size: 22px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding: 0 5px 0 10px;
+}
+.content .item:hover{
+    background: #f2f2f2;
+}
+.content .item span{
+    margin-left: 8px;
+    font-size: 19px;
+}
+.content .setting{
+    display: flex;
+    margin-top: -5px;
+    padding: 5px 12px;
+    border-top: 1px solid #ccc;
+}
+.content .share{
+    position: relative;
+    justify-content: space-between;
+}
+.share .share-menu{
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    right: -200px;
+    top: -35px;
+    padding: 13px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+.share:hover .share-menu{
+    opacity: 1;
+    pointer-events: auto;
 }
