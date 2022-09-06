@@ -4,22 +4,26 @@ body ::-webkit-scrollbar {
     height: 5px;
 }
 .container-fluid {
-    padding: 0;
-    margin: 0;
-    border: 1px solid black;
+    border: 2px solid black;
+    height: 100%;
 }
-.row {
-    border: 1px solid red;
-}
-.col-sm-2,.col-sm-10{
-    border: 1px solid blue;
-}
-.col{
-    border: 1px solid darkgreen;
-}
+
 #headerWindowOne {
+/*    margin: 5px;*/
+    border: 2px solid red;
     height: 15%;
 }
 #centerWindow {
+    height: 85%;
+/*    margin: 5px;*/
+    border: 2px solid purple;
     /*height: 100%;*/
+}
+#sliderCol {
+/*    margin: 5px;*/
+    border: 2px solid green;
+}
+#menuCol {
+/*    margin: 5px;*/
+    border: 2px solid blue;
 }
