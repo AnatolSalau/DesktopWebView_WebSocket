@@ -1,5 +1,6 @@
 package glucoreader_one;
 
+import com.jfoenix.controls.JFXDecorator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,11 +24,15 @@ public class Main extends Application {
         try {
             //Show window 1
             Image icon = new Image("/images/png/logoDHnew.png");
-            Parent gorizontalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_one.fxml"));
-/*            primaryStage.initStyle(StageStyle.UNDECORATED);*/
             primaryStage.setTitle("Window One");
             primaryStage.getIcons().add(icon);
-            primaryStage.setScene(new Scene(gorizontalSliderFxml,1200,900));
+            Parent windowOne = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_one.fxml"));
+            JFXDecorator decorator = new JFXDecorator(primaryStage , windowOne);
+            decorator.setCustomMaximize(true);
+            String uri = getClass().getResource("/glucoreader_one/css/jfxdecorator.css").toExternalForm();
+            Scene scene = new Scene(decorator,1000,700);
+            scene.getStylesheets().add(uri) ;
+            primaryStage.setScene(scene);
             primaryStage.show();
             //Show window 2
             Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_two.fxml"));
