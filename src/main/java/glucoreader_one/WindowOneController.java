@@ -17,7 +17,6 @@ public class WindowOneController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        windowOne.setContextMenuEnabled(false);
         engine = windowOne.getEngine();
         engine.setJavaScriptEnabled(true);
         engine.load(link);

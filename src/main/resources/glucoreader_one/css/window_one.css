@@ -10,8 +10,11 @@ body ::-webkit-scrollbar {
 }*/
 body{
     background-color: RGB(49 71 66);
+    overflow-y: hidden;
 }
-
+i {
+    font-style: normal!important;
+}
 .container-fluid {
     /*border: 4px solid red;*/
 }
@@ -61,7 +64,7 @@ body{
 
 #menuCol {
     /*border: 5px solid purple;*/
-    background-color: #fff;
+    background-color: #EAEAEA;
 }
 
 /*----------------------------------*/
@@ -105,25 +108,68 @@ body{
 .ui.tabular.menu {
     border-bottom: transparent !important;
 }
-
+/*----------------------------------*/
+#doctorPacientRow {
+    margin: 0!important;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dropdownWrapper {
+    margin: 10px!important;
+}
+#addPacientButtonWrapper {
+    margin: 10px!important;
+}
+#inputWrapper {
+    margin: 10px!important;
+}
 /*---------------------------------------------------------------------*/
-.wrapper {
+.btn {
+    text-transform: none!important;
+    line-height: 1em!important;
+}
+#addPacientButton {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #40B0A5!important; ;
+    border-radius: 10px;
+    height: 37px;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+}
+#addPacientButtonIcon {
+    margin-right: 20px;
+    color:white;
+}
+#addPacientButtonIcon.user.plus:before {
+    min-width: 20px!important;
+}
+/*-----------------------------------------------------------*/
+#firstDropdown {
+    z-index: 300;
+    width: 250px;
+}
+/*-----------------------------------------------------------*/
+.wrapper{
+    z-index: 1000;
     visibility: hidden;
     position: absolute;
-    width: 300px;
+    width: 170px;
     border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    background: #EAEAEA;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
 }
-
-.wrapper .menu {
+.wrapper .menu{
     padding: 10px 12px;
 }
-
-.content .item {
+.content .item{
     list-style: none;
-    font-size: 22px;
-    height: 50px;
+    font-size: 10px;
+    height: 25px;
     display: flex;
     width: 100%;
     cursor: pointer;
@@ -132,31 +178,26 @@ body{
     margin-bottom: 2px;
     padding: 0 5px 0 10px;
 }
-
-.content .item:hover {
+.content .item:hover{
     background: #f2f2f2;
 }
-
-.content .item span {
+.content .item span{
     margin-left: 8px;
     font-size: 19px;
 }
-
-.content .setting {
+.content .setting{
     display: flex;
     margin-top: -5px;
     padding: 5px 12px;
     border-top: 1px solid #ccc;
 }
-
-.content .share {
+.content .share{
     position: relative;
     justify-content: space-between;
 }
-
-.share .share-menu {
+.share .share-menu{
     position: absolute;
-    background: #fff;
+    background: #EAEAEA;
     width: 200px;
     right: -200px;
     top: -35px;
@@ -164,11 +205,22 @@ body{
     opacity: 0;
     pointer-events: none;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
     transition: 0.2s ease;
 }
-
-.share:hover .share-menu {
+.share:hover .share-menu{
     opacity: 1;
     pointer-events: auto;
+}
+.ui.input>input:focus {
+    border-color:RGB(64, 176, 165);
+}
+#firstDropdown:focus {
+    border-color:RGB(64, 176, 165)!important;
+}
+.ui.selection.active.dropdown {
+    border-color:RGB(64, 176, 165)!important;
+}
+.ui.selection.active.dropdown .menu {
+    border-color:RGB(64, 176, 165)!important;
 }

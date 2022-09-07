@@ -34,7 +34,7 @@
     height: 85px !important;
 }
 
-.btn {
+.sliderButton {
     border-radius: 5px;
     background-color: RGB(49 71 66) !important;
     display: flex;

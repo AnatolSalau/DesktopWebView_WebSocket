@@ -1,7 +1,7 @@
 "use strict";
-window.addEventListener("load", main);
+window.addEventListener("load", enableRightClickMenu);
 
-function main (event) {
+function enableRightClickMenu (event) {
     console.log("window loaded")
 
     const contextMenu = document.querySelector(".wrapper"),

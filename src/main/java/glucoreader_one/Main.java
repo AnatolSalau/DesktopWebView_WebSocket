@@ -35,7 +35,7 @@ public class Main extends Application {
             decorator.setGraphic(imageView);
             decorator.setText("GlucoAssist window one");
             String uri = getClass().getResource("/glucoreader_one/css/jfxdecorator.css").toExternalForm();
-            Scene scene = new Scene(decorator,1000,700);
+            Scene scene = new Scene(decorator,950,800);
             scene.getStylesheets().add(uri) ;
             primaryStage.setScene(scene);
             primaryStage.show();

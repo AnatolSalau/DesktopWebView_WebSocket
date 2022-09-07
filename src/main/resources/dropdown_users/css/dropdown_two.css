@@ -5,12 +5,11 @@ body ::-webkit-scrollbar {
 }
 .container {
     padding-top: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 .dropdown {
-    width: 250px;
+    width: 250px!important;
 }
 i {
     color: dodgerblue;
