@@ -32,16 +32,16 @@
 
 #cardHeader {
     background-color: #A7EFE1!important;
-
+    z-index: 20;
     height: 15px;
     padding: 0px;
     margin: 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
-    box-shadow: none;
     border-right: 3px solid #EAEAEA;
     border-left: 3px solid #EAEAEA;
     border-top: 3px solid #EAEAEA;
+    box-shadow: -6px 0 #A7EFE1, 6px 0 #A7EFE1, 0 7px 5px -2px #A7EFE1;
 }
 
 #cardFooter {
@@ -83,11 +83,12 @@ body ::-webkit-scrollbar {
     /*width: 5px;*/
 }
 #headerStycky {
+
     position: sticky;
     border: 2px solid #A7EFE1!important;
     top: 0px;
     z-index: 2;
-    /*box-shadow: -6px 0 white, 6px 0 white, 0 7px 5px -2px black;*/
+   /* box-shadow: -6px 0 white, 6px 0 white, 0 7px 5px -2px black;*/
 }
 
 .bg-success {
@@ -123,6 +124,7 @@ body > div.container > div > div.tableScrollWrapper > div > table {
     padding-bottom: 0 !important;
     background-color: #EAEAEA;
     border-left: 2px solid #A7EFE1!important;
+
 }
 
 #headerStycky > td:nth-child(1) {
