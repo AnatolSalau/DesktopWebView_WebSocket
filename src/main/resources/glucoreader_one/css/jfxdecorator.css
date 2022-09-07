@@ -7,6 +7,7 @@
 }
 .jfx-decorator .jfx-decorator-buttons-container:hover {
     -fx-background-color: -fx-decorator-color;
+    -fx-max-height: 10px;
 }
 
 
