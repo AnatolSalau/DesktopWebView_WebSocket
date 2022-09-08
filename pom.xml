@@ -74,11 +74,11 @@
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <finalName>ServiceCreate</finalName>
+                    <finalName>glucoreader_one</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>table_with_search.Main</mainClass>
+                            <mainClass>glucoreader_one.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
