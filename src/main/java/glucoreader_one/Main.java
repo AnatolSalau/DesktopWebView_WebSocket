@@ -40,12 +40,12 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
             //Show window 2
-/*            Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_two.fxml"));
+            Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_two.fxml"));
             Stage secondStage = new Stage();
             secondStage.setTitle("Window Two");
             secondStage.getIcons().add(icon);
             secondStage.setScene(new Scene(verticalSliderFxml,900,650));
-            secondStage.show();*/
+            secondStage.show();
         }
         catch (Exception ex) {
             ex.printStackTrace();
