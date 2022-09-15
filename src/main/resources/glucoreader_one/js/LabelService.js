@@ -1,4 +1,4 @@
-class LabelService {
+export default class LabelService {
 
     #defaultText;
     #thisDocument;
