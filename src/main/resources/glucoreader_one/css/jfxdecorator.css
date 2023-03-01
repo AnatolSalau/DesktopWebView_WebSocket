@@ -1,0 +1,20 @@
+.jfx-decorator {
+    -fx-decorator-color: #314742;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+.jfx-decorator .jfx-decorator-buttons-container:hover {
+    -fx-background-color: -fx-decorator-color;
+    -fx-max-height: 10px;
+}
+
+
+.jfx-decorator-button:hover {
+    -fx-background-color: #40B0A5;
+}
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 2 2 2 2;
+}
