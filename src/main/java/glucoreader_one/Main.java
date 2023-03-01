@@ -30,7 +30,10 @@ public class Main extends Application {
             primaryStage.setTitle("Window One");
             primaryStage.getIcons().add(icon);
             Parent windowOne = FXMLLoader.load(getClass().getResource("/glucoreader_one/window_one.fxml"));
-            JFXDecorator decorator = new JFXDecorator(primaryStage , windowOne);
+            JFXDecorator decorator = new JFXDecorator(
+                  primaryStage ,
+                  windowOne,
+                  false, false, false);
             decorator.setCustomMaximize(true);
             decorator.setGraphic(imageView);
             decorator.setText("GlucoAssist window one");
