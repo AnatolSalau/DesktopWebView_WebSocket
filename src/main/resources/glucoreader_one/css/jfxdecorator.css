@@ -1,4 +1,4 @@
-/*.jfx-decorator {
+.jfx-decorator {
     -fx-border-radius: 30px;
     -fx-decorator-color: #314742;
 }
@@ -17,23 +17,7 @@
 .jfx-decorator .resize-border {
     -fx-border-color: -fx-decorator-color;
     -fx-border-width: 2 2 2 2;
-}*/
+}
+.jfx-decorator title
 
-.jfx-decorator{
-    -fx-decorator-color: #2196F3;
-    -fx-text-fill: black;
-    -fx-background-color: transparent;
-    -fx-border-color: #2196F3;
-}
 
-.jfx-decorator .jfx-decorator-buttons-container{
-    -fx-background-color: -fx-decorator-color;
-}
-
-.jfx-decorator .resize-border{
-    -fx-border-color: #2196F3;
-    -fx-border-width: 4 4 4 4;
-}
-.jfx-decorator .jfx-decorator-buttons{
-    -fx-background-color: red;
-}

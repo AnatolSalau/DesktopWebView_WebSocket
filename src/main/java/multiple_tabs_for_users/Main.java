@@ -27,10 +27,14 @@ public class Main extends Application {
             //Show window 2
             Parent verticalSliderFxml = FXMLLoader.load(getClass().getResource("/multiple_tabs_for_users/window_two.fxml"));
             Stage secondStage = new Stage();
+
             secondStage.setTitle("Window Two");
             Image icon = new Image("/images/png/blood.png");
             secondStage.getIcons().add(icon);
-            secondStage.setScene(new Scene(verticalSliderFxml, 800, 600));
+
+            Scene scene = new Scene(verticalSliderFxml, 800, 600);
+            scene.getStylesheets().add(getClass().getResource("/multiple_tabs_for_users/window_two.css").toExternalForm());
+            secondStage.setScene(scene);
             secondStage.show();
         }
         catch (Exception ex) {
